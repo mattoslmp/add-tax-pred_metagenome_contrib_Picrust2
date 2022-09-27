@@ -3,7 +3,7 @@ library(dplyr)
 library(readr)
 library(openxlsx)
 
-setwd ("D:/ITV/Projeto-Isabelle-Markus/picrust2_out_stratified_min_0.9/KO_metagenome_out/picrust2")
+setwd ("D:/picrust2_out_stratified_min_0.9/KO_metagenome_out/picrust2")
 
 metagenome_contribut <- read_delim("pred_metagenome_contrib.tsv", 
                                          delim = "\t", escape_double = FALSE, 
