@@ -12,7 +12,7 @@ colnames(metagenome_contribut)
 colnames(metagenome_contribut) <- gsub('function', 'funct', colnames(metagenome_contribut))
 
 
-qiime2_tax <-list.files(path="D:/ITV/Projeto-Isabelle-Markus/picrust2_out_stratified_min_0.9/KO_metagenome_out/picrust2/", pattern="*_otus_tax_assignments.txt", full.names=TRUE) %>% 
+qiime2_tax <-list.files(path="D:/picrust2_out_stratified_min_0.9/KO_metagenome_out/picrust2/", pattern="*_otus_tax_assignments.txt", full.names=TRUE) %>% 
   lapply(read_tsv)
 
 qiime2_tax <- data.frame(qiime2_tax)
